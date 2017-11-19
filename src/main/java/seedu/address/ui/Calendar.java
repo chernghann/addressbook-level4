@@ -170,3 +170,4 @@ public class Calendar {
         EventsCenter.getInstance().post(new PopulateMonthEvent(currentYearMonth));
     }
 }
+
