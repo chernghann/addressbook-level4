@@ -281,7 +281,9 @@ public class MainWindow extends UiPart<Region> {
         }
         getRoot().getStylesheets().add(VIEW_PATH + theme);
     }
-
+    //@@author
+    
+    //@@author justinpoh-reused
     /**
      * Toggles the list panel based on the input panel.
      */
