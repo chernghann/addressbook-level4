@@ -1,6 +1,5 @@
 package seedu.address.ui;
 
-//@@author chernghann
 import java.time.LocalDate;
 import java.time.YearMonth;
 import java.time.format.DateTimeFormatter;
@@ -123,21 +122,6 @@ public class Calendar {
         calendarTitle.setText(yearMonth.getMonth().toString() + " " + String.valueOf(yearMonth.getYear()));
     }
 
-    /**
-     * Move the month back by one. Repopulate the calendar with the correct dates.
-     */
-    public void previousMonth() {
-        currentYearMonth = currentYearMonth.minusMonths(1);
-        EventsCenter.getInstance().post(new PopulateMonthEvent(currentYearMonth));
-    }
-
-    /**
-     * Move the month forward by one. Repopulate the calendar with the correct dates.
-     */
-    public void nextMonth() {
-        currentYearMonth = currentYearMonth.plusMonths(1);
-        EventsCenter.getInstance().post(new PopulateMonthEvent(currentYearMonth));
-    }
 
     public VBox getView() {
         return view;
@@ -151,6 +135,7 @@ public class Calendar {
         this.allCalendarDays = allCalendarDays;
     }
 
+    //@@author chernghann
     /**
      * populating updated calendar for the switch buttons for the add of events
      * @param eventList
@@ -167,5 +152,21 @@ public class Calendar {
                 }
             }
         }
+    }
+
+    /**
+     * Move the month back by one. Repopulate the calendar with the correct dates.
+     */
+    public void previousMonth() {
+        currentYearMonth = currentYearMonth.minusMonths(1);
+        EventsCenter.getInstance().post(new PopulateMonthEvent(currentYearMonth));
+    }
+
+    /**
+     * Move the month forward by one. Repopulate the calendar with the correct dates.
+     */
+    public void nextMonth() {
+        currentYearMonth = currentYearMonth.plusMonths(1);
+        EventsCenter.getInstance().post(new PopulateMonthEvent(currentYearMonth));
     }
 }

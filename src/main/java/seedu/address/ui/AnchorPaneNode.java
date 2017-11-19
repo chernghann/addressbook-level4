@@ -20,7 +20,6 @@ import seedu.address.commons.events.ui.CalendarPanelSelectionEvent;
 import seedu.address.model.event.Event;
 import seedu.address.model.event.exceptions.BuildEvent;
 
-//@@author chernghann
 
 /**
  * Create an anchor pane that can store additional data.
@@ -50,6 +49,7 @@ public class AnchorPaneNode extends AnchorPane {
         this.date = date;
     }
 
+    //@@author chernghann
     /**
      * Handles the event when the anchorpane is being clicked
      * @param event
