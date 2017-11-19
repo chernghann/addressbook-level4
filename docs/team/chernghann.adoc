@@ -26,6 +26,7 @@ The Myth's Book is a software application that is coded in `Java` programming la
 === Enhancement Added: School Email and Home Number Field
 
 This section includes the behavior and justification of the new fields and explains how it is implemented.
+
 Code on GitHub: Pull request https://github.com/CS2103AUG2017-T15-B3/main/pull/65[#65], https://github.com/CS2103AUG2017-T15-B3/main/pull/55[#55]
 
 ==== External behavior
@@ -84,6 +85,7 @@ include::../DeveloperGuide.adoc[tag=addevent]
 === Enhancement Added: Calendar
 
 This section includes the behaviour and justification of the Calendar enhancement and how it is implemented.
+
 Code on GitHub: Pull request https://github.com/CS2103AUG2017-T15-B3/main/pull/89[#89]
 
 ==== External behavior
@@ -153,4 +155,4 @@ This section outlines the additional contribution for The Myth's Book and UniFy 
 * Storage
 - Included ability to readBackUpAddressBook (Pull request https://github.com/CS2103AUG2017-T15-B3/main/pull/48[#45])
 * Test coverages
-- Increased test coverages (Pull request https://github.com/CS2103AUG2017-T15-B3/main/pull/151[#151], https://github.com/CS2103AUG2017-T15-B3/main/pull/158[#158])
+- Increased test coverages (Pull request https://github.com/CS2103AUG2017-T15-B3/main/pull/151[#151], https://github.com/CS2103AUG2017-T15-B3/main/pull/158[#158], https://github.com/CS2103AUG2017-T15-B3/main/pull/167[#167])
